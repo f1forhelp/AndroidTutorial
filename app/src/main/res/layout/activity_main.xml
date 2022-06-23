@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
-    <TextView
+    <Spinner
+        android:id="@+id/beer_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:minHeight="48dp"
+        android:entries="@array/beer_colors"
+        tools:ignore="SpeakableTextPresentCheck"
+        />
+
+    <Button
+        android:textAllCaps="false"
+        android:gravity="start|center_vertical"
+        android:id="@+id/find_beer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/find_beer" />
+
+    <TextView
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/beer_types"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
