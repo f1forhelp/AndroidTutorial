@@ -18,21 +18,24 @@
         android:minHeight="48dp"
         android:entries="@array/beer_colors"
         tools:ignore="SpeakableTextPresentCheck"
+        tools:entries="@array/beer_colors"
         />
 
     <Button
         android:textAllCaps="false"
-        android:gravity="start|center_vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:id="@+id/find_beer"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/find_beer" />
 
     <TextView
+        android:textAlignment="center"
+        android:id="@+id/brands"
         android:layout_margin="20dp"
         android:textSize="24sp"
         android:layout_gravity="center"
-        android:id="@+id/brands"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/beer_types"
