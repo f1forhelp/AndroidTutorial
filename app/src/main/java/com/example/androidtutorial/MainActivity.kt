@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         beerColor=  findViewById(R.id.beer_color)
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,6 +37,4 @@ class MainActivity : AppCompatActivity() {
             else -> listOf<String>("Gout Stout","Dark Daniel")
         }.reduce { acc, s -> acc+"\n" + s }
     }
-
-
 }
