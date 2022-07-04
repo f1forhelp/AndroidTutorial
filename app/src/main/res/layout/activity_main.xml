@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,43 +7,32 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
+    android:fillViewport="true"
+    android:gravity="center_horizontal"
     tools:context=".MainActivity">
-
-    <Spinner
-        android:id="@+id/beer_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        android:minHeight="48dp"
-        android:entries="@array/beer_colors"
-        tools:ignore="SpeakableTextPresentCheck"
-        tools:entries="@array/beer_colors"
-        />
-
-    <Button
-        android:textAllCaps="false"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:id="@+id/find_beer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/find_beer" />
-
     <TextView
-        android:textAlignment="center"
-        android:id="@+id/brands"
-        android:layout_margin="20dp"
-        android:textSize="24sp"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/beer_types"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="00:00"
+        android:textSize="80sp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="stop"
+            />
+    </LinearLayout>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
 
 
